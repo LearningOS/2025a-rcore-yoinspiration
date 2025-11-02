@@ -53,9 +53,15 @@ impl OSInode {
         }
         v
     }
+    /// get the inode for stat operations
+    pub fn get_inode_inner(&self) -> alloc::sync::Arc<easy_fs::Inode> {
+        let inner = self.inner.exclusive_access();
+        inner.inode.clone()
+    }
 }
 
 lazy_static! {
+    /// Root inode of the filesystem
     pub static ref ROOT_INODE: Arc<Inode> = {
         let efs = EasyFileSystem::open(BLOCK_DEVICE.clone());
         Arc::new(EasyFileSystem::root_inode(&efs))
@@ -131,6 +137,9 @@ impl File for OSInode {
     }
     fn writable(&self) -> bool {
         self.writable
+    }
+    fn get_inode(&self) -> Option<alloc::sync::Arc<easy_fs::Inode>> {
+        Some(self.get_inode_inner())
     }
     fn read(&self, mut buf: UserBuffer) -> usize {
         let mut inner = self.inner.exclusive_access();

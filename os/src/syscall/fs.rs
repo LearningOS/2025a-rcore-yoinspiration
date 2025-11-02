@@ -1,7 +1,8 @@
 //! File and filesystem-related syscalls
-use crate::fs::{open_file, OpenFlags, Stat};
-use crate::mm::{translated_byte_buffer, translated_str, UserBuffer};
+use crate::fs::{open_file, OpenFlags, Stat, StatMode, ROOT_INODE};
+use crate::mm::{translated_byte_buffer, translated_refmut, translated_str, UserBuffer};
 use crate::task::{current_task, current_user_token};
+use easy_fs::DiskInodeType;
 
 pub fn sys_write(fd: usize, buf: *const u8, len: usize) -> isize {
     trace!("kernel:pid[{}] sys_write", current_task().unwrap().pid.0);
@@ -75,29 +76,101 @@ pub fn sys_close(fd: usize) -> isize {
     0
 }
 
-/// YOUR JOB: Implement fstat.
-pub fn sys_fstat(_fd: usize, _st: *mut Stat) -> isize {
-    trace!(
-        "kernel:pid[{}] sys_fstat NOT IMPLEMENTED",
-        current_task().unwrap().pid.0
-    );
-    -1
+/// Get file status
+pub fn sys_fstat(fd: usize, st: *mut Stat) -> isize {
+    trace!("kernel:pid[{}] sys_fstat", current_task().unwrap().pid.0);
+    let task = current_task().unwrap();
+    let inner = task.inner_exclusive_access();
+    if fd >= inner.fd_table.len() {
+        return -1;
+    }
+    if let Some(file) = &inner.fd_table[fd] {
+        // Get the inode through File trait method
+        // For OSInode, this will return Some, for stdin/stdout, it will return None
+        let file_clone = file.clone();
+        drop(inner);
+        
+        // Try to get the inode
+        if let Some(inode) = file_clone.get_inode() {
+            // Get inode information
+            let inode_id = inode.inode_id() as u64;
+            let nlink = inode.nlink();
+            let inode_type = inode.inode_type();
+            
+            // Convert DiskInodeType to StatMode
+            let mode = if inode_type == DiskInodeType::Directory {
+                StatMode::DIR
+            } else {
+                StatMode::FILE
+            };
+            
+            // Fill Stat structure
+            let stat = Stat {
+                dev: 0, // Device ID, always 0 as specified
+                ino: inode_id,
+                mode,
+                nlink,
+                pad: [0; 7],
+            };
+            
+            // Write Stat to user space
+            let token = current_user_token();
+            *translated_refmut(token, st) = stat;
+            0
+        } else {
+            // Not an OSInode (e.g., stdin/stdout), return error
+            -1
+        }
+    } else {
+        -1
+    }
 }
 
-/// YOUR JOB: Implement linkat.
-pub fn sys_linkat(_old_name: *const u8, _new_name: *const u8) -> isize {
-    trace!(
-        "kernel:pid[{}] sys_linkat NOT IMPLEMENTED",
-        current_task().unwrap().pid.0
-    );
-    -1
+/// Create a hard link
+pub fn sys_linkat(old_name: *const u8, new_name: *const u8) -> isize {
+    trace!("kernel:pid[{}] sys_linkat", current_task().unwrap().pid.0);
+    let token = current_user_token();
+    let old_path = translated_str(token, old_name);
+    let new_path = translated_str(token, new_name);
+    
+    // Check if old_path and new_path are the same
+    if old_path == new_path {
+        return -1;
+    }
+    
+    // Find the target inode
+    if let Some(target_inode) = ROOT_INODE.find(old_path.as_str()) {
+        // Check if new_path already exists
+        if ROOT_INODE.find(new_path.as_str()).is_some() {
+            return -1; // New path already exists
+        }
+        
+        // Create the hard link
+        if ROOT_INODE.link_at(new_path.as_str(), target_inode) {
+            0
+        } else {
+            -1
+        }
+    } else {
+        -1 // Old path not found
+    }
 }
 
-/// YOUR JOB: Implement unlinkat.
-pub fn sys_unlinkat(_name: *const u8) -> isize {
-    trace!(
-        "kernel:pid[{}] sys_unlinkat NOT IMPLEMENTED",
-        current_task().unwrap().pid.0
-    );
-    -1
+/// Remove a hard link
+pub fn sys_unlinkat(name: *const u8) -> isize {
+    trace!("kernel:pid[{}] sys_unlinkat", current_task().unwrap().pid.0);
+    let token = current_user_token();
+    let path = translated_str(token, name);
+    
+    // Check if file exists
+    if ROOT_INODE.find(path.as_str()).is_none() {
+        return -1; // File not found
+    }
+    
+    // Remove the hard link
+    if ROOT_INODE.unlink_at(path.as_str()) {
+        0
+    } else {
+        -1
+    }
 }
