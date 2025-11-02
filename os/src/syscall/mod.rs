@@ -27,14 +27,30 @@ mod process;
 use fs::*;
 use process::*;
 
+use crate::task::inc_syscall_count;
+
 /// handle syscall exception with `syscall_id` and other arguments
 pub fn syscall(syscall_id: usize, args: [usize; 3]) -> isize {
-    match syscall_id {
+    let result = match syscall_id {
         SYSCALL_WRITE => sys_write(args[0], args[1] as *const u8, args[2]),
         SYSCALL_EXIT => sys_exit(args[0] as i32),
         SYSCALL_YIELD => sys_yield(),
         SYSCALL_GET_TIME => sys_get_time(args[0] as *mut TimeVal, args[1]),
-        SYSCALL_TRACE => sys_trace(args[0], args[1], args[2]),
+        SYSCALL_TRACE => {
+            // For trace_request=2, counting is handled inside sys_trace
+            // For trace_request=0 and 1, we count here
+            let result = sys_trace(args[0], args[1], args[2]);
+            if args[0] != 2 {
+                // Only count if not querying (trace_request != 2)
+                inc_syscall_count(syscall_id);
+            }
+            result
+        }
         _ => panic!("Unsupported syscall_id: {}", syscall_id),
+    };
+    // Count syscall after handling (except trace_request=2 which counts inside sys_trace)
+    if syscall_id != SYSCALL_TRACE {
+        inc_syscall_count(syscall_id);
     }
+    result
 }

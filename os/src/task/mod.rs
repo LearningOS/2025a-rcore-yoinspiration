@@ -51,10 +51,11 @@ lazy_static! {
     /// Global variable: TASK_MANAGER
     pub static ref TASK_MANAGER: TaskManager = {
         let num_app = get_num_app();
-        let mut tasks = [TaskControlBlock {
+        let mut tasks = [(); MAX_APP_NUM].map(|_| TaskControlBlock {
             task_cx: TaskContext::zero_init(),
             task_status: TaskStatus::UnInit,
-        }; MAX_APP_NUM];
+            syscall_count: [0; 500],
+        });
         for (i, task) in tasks.iter_mut().enumerate() {
             task.task_cx = TaskContext::goto_restore(init_app_cx(i));
             task.task_status = TaskStatus::Ready;
@@ -168,4 +169,29 @@ pub fn suspend_current_and_run_next() {
 pub fn exit_current_and_run_next() {
     mark_current_exited();
     run_next_task();
+}
+
+/// Get current task id
+pub fn current_task() -> usize {
+    TASK_MANAGER.inner.exclusive_access().current_task
+}
+
+/// Increment syscall count for current task
+pub fn inc_syscall_count(syscall_id: usize) {
+    let mut inner = TASK_MANAGER.inner.exclusive_access();
+    let current = inner.current_task;
+    if syscall_id < inner.tasks[current].syscall_count.len() {
+        inner.tasks[current].syscall_count[syscall_id] += 1;
+    }
+}
+
+/// Get syscall count for current task
+pub fn get_syscall_count(syscall_id: usize) -> usize {
+    let inner = TASK_MANAGER.inner.exclusive_access();
+    let current = inner.current_task;
+    if syscall_id < inner.tasks[current].syscall_count.len() {
+        inner.tasks[current].syscall_count[syscall_id]
+    } else {
+        0
+    }
 }
