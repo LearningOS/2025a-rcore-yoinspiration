@@ -1,0 +1,2373 @@
+   0.031465794s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="user_lib"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("user_lib", ["lib"], "/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/lib.rs", Edition2018) }
+   0.031525729s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="user_lib"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-a01802322c674e30/lib-user_lib`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.170211398s  INFO prepare_target{force=false package_id=bitflags v1.3.2 target="bitflags"}: cargo::core::compiler::fingerprint: fingerprint error for bitflags v1.3.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("bitflags", ["lib"], "/Users/fei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/bitflags-1.3.2/src/lib.rs", Edition2018) }
+   0.170234163s  INFO prepare_target{force=false package_id=bitflags v1.3.2 target="bitflags"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/bitflags-25aa3cbd396fcc09/lib-bitflags`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+  17: _main
+  18: <unknown>
+   0.170661504s  INFO prepare_target{force=false package_id=buddy_system_allocator v0.6.0 target="buddy_system_allocator"}: cargo::core::compiler::fingerprint: fingerprint error for buddy_system_allocator v0.6.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("buddy_system_allocator", ["lib"], "/Users/fei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/buddy_system_allocator-0.6.0/src/lib.rs", Edition2018) }
+   0.170680632s  INFO prepare_target{force=false package_id=buddy_system_allocator v0.6.0 target="buddy_system_allocator"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/buddy_system_allocator-55aa6dcd136993da/lib-buddy_system_allocator`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+  17: _main
+  18: <unknown>
+   0.171136525s  INFO prepare_target{force=false package_id=spin v0.7.1 target="spin"}: cargo::core::compiler::fingerprint: fingerprint error for spin v0.7.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("spin", ["lib"], "/Users/fei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.7.1/src/lib.rs", Edition2015) }
+   0.171155238s  INFO prepare_target{force=false package_id=spin v0.7.1 target="spin"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/spin-0e4847a3a19198df/lib-spin`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+  19: <unknown>
+   0.171600629s  INFO prepare_target{force=false package_id=lazy_static v1.5.0 target="lazy_static"}: cargo::core::compiler::fingerprint: fingerprint error for lazy_static v1.5.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("lazy_static", ["lib"], "/Users/fei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/lazy_static-1.5.0/src/lib.rs", Edition2015) }
+   0.171619540s  INFO prepare_target{force=false package_id=lazy_static v1.5.0 target="lazy_static"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/lazy_static-3eceee1cd29d94e5/lib-lazy_static`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+  17: _main
+  18: <unknown>
+   0.172111909s  INFO prepare_target{force=false package_id=spin v0.9.8 target="spin"}: cargo::core::compiler::fingerprint: fingerprint error for spin v0.9.8/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("spin", ["lib"], "/Users/fei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/spin-0.9.8/src/lib.rs", Edition2015) }
+   0.172132143s  INFO prepare_target{force=false package_id=spin v0.9.8 target="spin"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/spin-4558f38aea5a60be/lib-spin`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: std::rt::lang_start_internal
+  18: _main
+  19: <unknown>
+   0.172615679s  INFO prepare_target{force=false package_id=lock_api v0.4.6 target="lock_api"}: cargo::core::compiler::fingerprint: fingerprint error for lock_api v0.4.6/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("lock_api", ["lib"], "/Users/fei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/lock_api-0.4.6/src/lib.rs", Edition2018) }
+   0.172635274s  INFO prepare_target{force=false package_id=lock_api v0.4.6 target="lock_api"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/lock_api-49437e1bd841892a/lib-lock_api`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  11: cargo::ops::cargo_compile::compile_ws
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: std::rt::lang_start_internal
+  19: _main
+  20: <unknown>
+   0.173122232s  INFO prepare_target{force=false package_id=scopeguard v1.2.0 target="scopeguard"}: cargo::core::compiler::fingerprint: fingerprint error for scopeguard v1.2.0/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("scopeguard", ["lib"], "/Users/fei/.cargo/registry/src/index.crates.io-6f17d22bba15001f/scopeguard-1.2.0/src/lib.rs", Edition2015) }
+   0.173143856s  INFO prepare_target{force=false package_id=scopeguard v1.2.0 target="scopeguard"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/scopeguard-2cc51b72c1054a5b/lib-scopeguard`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: cargo::core::compiler::compile
+  10: cargo::core::compiler::compile
+  11: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  12: cargo::ops::cargo_compile::compile_ws
+  13: cargo::ops::cargo_compile::compile
+  14: cargo::commands::check::exec
+  15: <cargo::cli::Exec>::exec
+  16: cargo::main
+  17: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  18: std::rt::lang_start::<()>::{closure#0}
+  19: std::rt::lang_start_internal
+  20: _main
+  21: <unknown>
+   0.173654849s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch2b_bad_address"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch2b_bad_address", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch2b_bad_address.rs", Edition2018) }
+   0.173676563s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch2b_bad_address"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-1322bdceca7a66be/bin-ch2b_bad_address`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.174591277s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch2b_bad_instructions"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch2b_bad_instructions", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch2b_bad_instructions.rs", Edition2018) }
+   0.174615051s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch2b_bad_instructions"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-c3fdbd4aa9fb366b/bin-ch2b_bad_instructions`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.175401028s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch2b_bad_register"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch2b_bad_register", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch2b_bad_register.rs", Edition2018) }
+   0.175421416s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch2b_bad_register"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-4a2064c31113747d/bin-ch2b_bad_register`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.176174918s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch2b_hello_world"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch2b_hello_world", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch2b_hello_world.rs", Edition2018) }
+   0.176194222s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch2b_hello_world"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-5c56bc62d9844522/bin-ch2b_hello_world`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.177552120s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch2b_power_3"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch2b_power_3", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch2b_power_3.rs", Edition2018) }
+   0.177572053s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch2b_power_3"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-3ed964467842d646/bin-ch2b_power_3`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.178773576s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch2b_power_5"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch2b_power_5", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch2b_power_5.rs", Edition2018) }
+   0.178795895s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch2b_power_5"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-62d0a5e7142998fa/bin-ch2b_power_5`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.179621297s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch2b_power_7"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch2b_power_7", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch2b_power_7.rs", Edition2018) }
+   0.179644228s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch2b_power_7"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-b260d8cae2ddd516/bin-ch2b_power_7`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.180409716s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch3_sleep"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch3_sleep", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch3_sleep.rs", Edition2018) }
+   0.180432650s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch3_sleep"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-9c671cfd4ccadfc8/bin-ch3_sleep`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.199223096s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch3_sleep1"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch3_sleep1", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch3_sleep1.rs", Edition2018) }
+   0.199248705s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch3_sleep1"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-6e4111f5dae42323/bin-ch3_sleep1`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.200030474s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch3_trace"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch3_trace", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch3_trace.rs", Edition2018) }
+   0.200052890s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch3_trace"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-2e4296800be55d1e/bin-ch3_trace`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.200768353s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch3b_yield0"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch3b_yield0", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch3b_yield0.rs", Edition2018) }
+   0.200791251s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch3b_yield0"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-ccce7aca9eb1d302/bin-ch3b_yield0`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.201558843s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch3b_yield1"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch3b_yield1", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch3b_yield1.rs", Edition2018) }
+   0.201582551s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch3b_yield1"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-54d7d7b5628e84f8/bin-ch3b_yield1`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.202321413s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch3b_yield2"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch3b_yield2", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch3b_yield2.rs", Edition2018) }
+   0.202342864s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch3b_yield2"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-8db4d2bed2af1299/bin-ch3b_yield2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.203138602s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch4_mmap0"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch4_mmap0", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch4_mmap0.rs", Edition2018) }
+   0.203158228s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch4_mmap0"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-cee2b5a140f18dd5/bin-ch4_mmap0`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.203956781s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch4_mmap1"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch4_mmap1", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch4_mmap1.rs", Edition2018) }
+   0.203975478s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch4_mmap1"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-eb75337457986aa9/bin-ch4_mmap1`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.204730125s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch4_mmap2"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch4_mmap2", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch4_mmap2.rs", Edition2018) }
+   0.204749186s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch4_mmap2"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-f6eecddea9c08330/bin-ch4_mmap2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.205574050s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch4_mmap3"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch4_mmap3", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch4_mmap3.rs", Edition2018) }
+   0.205594133s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch4_mmap3"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-f6040dbbf1e95b0f/bin-ch4_mmap3`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.206340162s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch4_trace1"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch4_trace1", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch4_trace1.rs", Edition2018) }
+   0.206359643s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch4_trace1"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-7f72366a2346a55d/bin-ch4_trace1`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.207126258s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch4_unmap"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch4_unmap", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch4_unmap.rs", Edition2018) }
+   0.207145898s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch4_unmap"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-028542c190dc8aa9/bin-ch4_unmap`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.207927176s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch4_unmap2"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch4_unmap2", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch4_unmap2.rs", Edition2018) }
+   0.207945487s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch4_unmap2"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-b0f1efc043d3ef47/bin-ch4_unmap2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.208683810s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch4b_sbrk"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch4b_sbrk", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch4b_sbrk.rs", Edition2018) }
+   0.218981751s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch4b_sbrk"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-464da610cbdc0a12/bin-ch4b_sbrk`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.219815194s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_exit0"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5_exit0", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5_exit0.rs", Edition2018) }
+   0.219834669s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_exit0"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-d5601154c5b5ca34/bin-ch5_exit0`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.220560364s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_exit1"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5_exit1", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5_exit1.rs", Edition2018) }
+   0.220579587s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_exit1"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-a4f77754522c0bdc/bin-ch5_exit1`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.221319425s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_getpid"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5_getpid", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5_getpid.rs", Edition2018) }
+   0.221337546s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_getpid"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-3dcff1117e0b7b6b/bin-ch5_getpid`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.222077688s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_setprio"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5_setprio", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5_setprio.rs", Edition2018) }
+   0.222096364s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_setprio"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-bb098ad3fdb7b91d/bin-ch5_setprio`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.222834227s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_spawn0"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5_spawn0", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5_spawn0.rs", Edition2018) }
+   0.222852954s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_spawn0"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-98ba1aa1eb46d558/bin-ch5_spawn0`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.223594722s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_spawn1"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5_spawn1", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5_spawn1.rs", Edition2018) }
+   0.223614136s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_spawn1"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-38c8514609b9701e/bin-ch5_spawn1`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.224350796s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_stride"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5_stride", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5_stride.rs", Edition2018) }
+   0.224369037s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_stride"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-210955446f0a4efd/bin-ch5_stride`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.225123033s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_stride0"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5_stride0", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5_stride0.rs", Edition2018) }
+   0.225141235s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_stride0"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-6a0116bb72a6c5e5/bin-ch5_stride0`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.225983293s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_stride1"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5_stride1", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5_stride1.rs", Edition2018) }
+   0.226005895s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_stride1"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-f5d7f408f637c839/bin-ch5_stride1`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.226770316s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_stride2"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5_stride2", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5_stride2.rs", Edition2018) }
+   0.226792387s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_stride2"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-307acc26c612b709/bin-ch5_stride2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.227548811s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_stride3"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5_stride3", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5_stride3.rs", Edition2018) }
+   0.227569639s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_stride3"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-d8416bffd60ad354/bin-ch5_stride3`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.228286083s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_stride4"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5_stride4", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5_stride4.rs", Edition2018) }
+   0.228306086s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_stride4"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-65b3f4e8cbcb973f/bin-ch5_stride4`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.238008408s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_stride5"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5_stride5", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5_stride5.rs", Edition2018) }
+   0.238040195s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_stride5"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-43c1d643b12b3a0c/bin-ch5_stride5`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.238887100s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_usertest"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5_usertest", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5_usertest.rs", Edition2018) }
+   0.238908800s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5_usertest"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-854c95390faf5660/bin-ch5_usertest`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.239676806s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5b_exit"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5b_exit", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5b_exit.rs", Edition2018) }
+   0.239697609s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5b_exit"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-37382a96dfda536f/bin-ch5b_exit`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.240413668s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5b_forktest"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5b_forktest", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5b_forktest.rs", Edition2018) }
+   0.240433781s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5b_forktest"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-33890e98fca5476a/bin-ch5b_forktest`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.241202330s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5b_forktest2"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5b_forktest2", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5b_forktest2.rs", Edition2018) }
+   0.241223140s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5b_forktest2"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-3aaa8c1dcc263dfa/bin-ch5b_forktest2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.241987836s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5b_forktest_simple"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5b_forktest_simple", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5b_forktest_simple.rs", Edition2018) }
+   0.242010353s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5b_forktest_simple"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-811c7a503002a496/bin-ch5b_forktest_simple`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.242795234s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5b_forktree"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5b_forktree", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5b_forktree.rs", Edition2018) }
+   0.242815991s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5b_forktree"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-ff5d7d84b8ccce6c/bin-ch5b_forktree`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.243565632s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5b_initproc"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5b_initproc", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5b_initproc.rs", Edition2018) }
+   0.243588458s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5b_initproc"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-8327fc5a20dd1c2c/bin-ch5b_initproc`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.244358854s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5b_user_shell"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5b_user_shell", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5b_user_shell.rs", Edition2018) }
+   0.244380864s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5b_user_shell"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-5fb26895156abf2b/bin-ch5b_user_shell`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.245138850s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5b_usertest"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch5b_usertest", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch5b_usertest.rs", Edition2018) }
+   0.245159816s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch5b_usertest"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-e55e8d4de98ed78a/bin-ch5b_usertest`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.245940439s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6_file0"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch6_file0", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch6_file0.rs", Edition2018) }
+   0.245961915s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6_file0"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-2bb0e48054f6e675/bin-ch6_file0`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.246736431s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6_file1"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch6_file1", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch6_file1.rs", Edition2018) }
+   0.246756883s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6_file1"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-fe1186fa30a699ad/bin-ch6_file1`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.247553954s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6_file2"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch6_file2", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch6_file2.rs", Edition2018) }
+   0.248376969s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6_file2"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-2a6565e47abef274/bin-ch6_file2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.249997393s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6_file3"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch6_file3", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch6_file3.rs", Edition2018) }
+   0.250021594s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6_file3"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-2c1f7e59596a8a5b/bin-ch6_file3`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.251834992s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6_usertest"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch6_usertest", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch6_usertest.rs", Edition2018) }
+   0.251893510s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6_usertest"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-cdb81044cde5f0ae/bin-ch6_usertest`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.253171870s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6b_cat"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch6b_cat", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch6b_cat.rs", Edition2018) }
+   0.253196981s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6b_cat"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-2b50680b7279647c/bin-ch6b_cat`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.253983321s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6b_filetest_simple"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch6b_filetest_simple", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch6b_filetest_simple.rs", Edition2018) }
+   0.254003692s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6b_filetest_simple"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-17266e77166ebde5/bin-ch6b_filetest_simple`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.254701732s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6b_initproc"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch6b_initproc", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch6b_initproc.rs", Edition2018) }
+   0.254720932s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6b_initproc"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-50b9925350319ba4/bin-ch6b_initproc`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.255419007s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6b_user_shell"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch6b_user_shell", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch6b_user_shell.rs", Edition2018) }
+   0.255438438s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6b_user_shell"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-57907b11a5db6aef/bin-ch6b_user_shell`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.256133754s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6b_usertest"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch6b_usertest", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch6b_usertest.rs", Edition2018) }
+   0.256153837s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch6b_usertest"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-77c325b2dfe09219/bin-ch6b_usertest`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.256895886s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7_usertest"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch7_usertest", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch7_usertest.rs", Edition2018) }
+   0.256915728s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7_usertest"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-a6e32d3a2d01cc8c/bin-ch7_usertest`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.257676120s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_cat"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch7b_cat", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch7b_cat.rs", Edition2018) }
+   0.257696751s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_cat"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-9aa5d0a4673b948d/bin-ch7b_cat`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.258445196s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_initproc"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch7b_initproc", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch7b_initproc.rs", Edition2018) }
+   0.258466419s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_initproc"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-da708ed59851057b/bin-ch7b_initproc`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.259243383s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_pipe_large_test"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch7b_pipe_large_test", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch7b_pipe_large_test.rs", Edition2018) }
+   0.259265784s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_pipe_large_test"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-79b48310f812b829/bin-ch7b_pipe_large_test`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.260007837s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_pipetest"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch7b_pipetest", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch7b_pipetest.rs", Edition2018) }
+   0.260027211s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_pipetest"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-35126c0a2e7321ab/bin-ch7b_pipetest`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.260814971s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_run_pipe_test"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch7b_run_pipe_test", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch7b_run_pipe_test.rs", Edition2018) }
+   0.278080454s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_run_pipe_test"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-be381fe004bb6dc0/bin-ch7b_run_pipe_test`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.278974497s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_sig_simple"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch7b_sig_simple", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch7b_sig_simple.rs", Edition2018) }
+   0.279034252s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_sig_simple"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-78d5925cd5ddd00d/bin-ch7b_sig_simple`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.279885642s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_sig_simple2"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch7b_sig_simple2", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch7b_sig_simple2.rs", Edition2018) }
+   0.279940820s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_sig_simple2"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-aaafe7d36e2ba191/bin-ch7b_sig_simple2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.280763209s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_sig_tests"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch7b_sig_tests", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch7b_sig_tests.rs", Edition2018) }
+   0.287221014s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_sig_tests"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-6cdf49d3a19f86b3/bin-ch7b_sig_tests`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.288030742s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_user_shell"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch7b_user_shell", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch7b_user_shell.rs", Edition2018) }
+   0.288051787s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_user_shell"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-5d236bb5f6397631/bin-ch7b_user_shell`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.288787160s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_usertest"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch7b_usertest", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch7b_usertest.rs", Edition2018) }
+   0.288808337s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_usertest"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-f995764b53a00e17/bin-ch7b_usertest`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.289571248s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_yield"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch7b_yield", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch7b_yield.rs", Edition2018) }
+   0.289592047s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch7b_yield"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-f6ed3791dd844dcd/bin-ch7b_yield`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.290349728s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8_deadlock_mutex1"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8_deadlock_mutex1", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8_deadlock_mutex1.rs", Edition2018) }
+   0.290371063s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8_deadlock_mutex1"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-ed91146b3aedd01d/bin-ch8_deadlock_mutex1`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.292544635s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8_deadlock_sem1"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8_deadlock_sem1", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8_deadlock_sem1.rs", Edition2018) }
+   0.292604056s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8_deadlock_sem1"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-41c35e6168e383dc/bin-ch8_deadlock_sem1`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.293560909s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8_deadlock_sem2"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8_deadlock_sem2", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8_deadlock_sem2.rs", Edition2018) }
+   0.293620291s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8_deadlock_sem2"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-f5669b2bb2b1222f/bin-ch8_deadlock_sem2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.294472760s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8_usertest"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8_usertest", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8_usertest.rs", Edition2018) }
+   0.294528251s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8_usertest"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-ab9b19c37eecdbbb/bin-ch8_usertest`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.295440227s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_initproc"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8b_initproc", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8b_initproc.rs", Edition2018) }
+   0.295461969s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_initproc"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-b98a2d8e4d9e43f9/bin-ch8b_initproc`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.296144031s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_mpsc_sem"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8b_mpsc_sem", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8b_mpsc_sem.rs", Edition2018) }
+   0.296163535s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_mpsc_sem"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-4b50a7f6a7233471/bin-ch8b_mpsc_sem`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.316506841s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_phil_din_mutex"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8b_phil_din_mutex", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8b_phil_din_mutex.rs", Edition2018) }
+   0.316533212s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_phil_din_mutex"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-7d301ffb2ee4bd89/bin-ch8b_phil_din_mutex`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.317236830s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_race_adder"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8b_race_adder", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8b_race_adder.rs", Edition2018) }
+   0.317352619s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_race_adder"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-b134dc5cfd4b6502/bin-ch8b_race_adder`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.319317630s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_race_adder_atomic"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8b_race_adder_atomic", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8b_race_adder_atomic.rs", Edition2018) }
+   0.319377043s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_race_adder_atomic"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-56cc55cdba62bd66/bin-ch8b_race_adder_atomic`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.320292744s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_race_adder_loop"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8b_race_adder_loop", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8b_race_adder_loop.rs", Edition2018) }
+   0.320315044s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_race_adder_loop"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-c1f7200a4c941809/bin-ch8b_race_adder_loop`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.321184030s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_race_adder_mutex_spin"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8b_race_adder_mutex_spin", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8b_race_adder_mutex_spin.rs", Edition2018) }
+   0.321206902s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_race_adder_mutex_spin"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-1b9866975b7ca61f/bin-ch8b_race_adder_mutex_spin`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.322448820s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_stackful_coroutine"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8b_stackful_coroutine", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8b_stackful_coroutine.rs", Edition2018) }
+   0.322474387s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_stackful_coroutine"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-dfc14b6ff2d32526/bin-ch8b_stackful_coroutine`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.323257791s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_stackless_coroutine"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8b_stackless_coroutine", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8b_stackless_coroutine.rs", Edition2018) }
+   0.323277418s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_stackless_coroutine"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-f0943aca2bf47a42/bin-ch8b_stackless_coroutine`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.327732788s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_sync_sem"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8b_sync_sem", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8b_sync_sem.rs", Edition2018) }
+   0.327757260s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_sync_sem"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-8b7de77a22861fb0/bin-ch8b_sync_sem`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.328608083s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_test_condvar"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8b_test_condvar", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8b_test_condvar.rs", Edition2018) }
+   0.328668510s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_test_condvar"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-50525f4c99bef48d/bin-ch8b_test_condvar`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.331285166s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_threads"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8b_threads", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8b_threads.rs", Edition2018) }
+   0.332029808s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_threads"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-24149696e89368b0/bin-ch8b_threads`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.332903153s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_threads_arg"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8b_threads_arg", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8b_threads_arg.rs", Edition2018) }
+   0.332927267s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_threads_arg"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-e6b9f94b6436471d/bin-ch8b_threads_arg`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.333807979s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_user_shell"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8b_user_shell", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8b_user_shell.rs", Edition2018) }
+   0.333830130s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_user_shell"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-9e95275d0dfce42b/bin-ch8b_user_shell`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.334578648s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_usertest"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch8b_usertest", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch8b_usertest.rs", Edition2018) }
+   0.334599925s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch8b_usertest"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-147a73e4cdac458a/bin-ch8b_usertest`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.335338089s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch9b_initproc"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch9b_initproc", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch9b_initproc.rs", Edition2018) }
+   0.335359505s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch9b_initproc"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-e8d5e13e6357d84b/bin-ch9b_initproc`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+   0.338852505s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch9b_usertest"}: cargo::core::compiler::fingerprint: fingerprint error for user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)/Check { test: false }/TargetInner { name: "ch9b_usertest", doc: true, ..: with_path("/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/src/bin/ch9b_usertest.rs", Edition2018) }
+   0.338919254s  INFO prepare_target{force=false package_id=user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user) target="ch9b_usertest"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user/target/riscv64gc-unknown-none-elf/debug/.fingerprint/user_lib-fc8fe09e200b9886/bin-ch9b_usertest`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys_common::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: std::rt::lang_start_internal
+  16: _main
+  17: <unknown>
+    Checking scopeguard v1.2.0
+    Checking spin v0.7.1
+    Checking bitflags v1.3.2
+    Checking lock_api v0.4.6
+    Checking buddy_system_allocator v0.6.0
+    Checking spin v0.9.8
+    Checking lazy_static v1.5.0
+    Checking user_lib v0.1.0 (/Users/fei/open-camp-os/2025a-rcore-yoinspiration/user)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 4.04s

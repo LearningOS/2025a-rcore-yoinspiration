@@ -24,6 +24,7 @@ pub struct ProcessControlBlock {
 }
 
 /// Inner of Process Control Block
+#[allow(clippy::module_inception)]
 pub struct ProcessControlBlockInner {
     /// is zombie?
     pub is_zombie: bool,
@@ -47,8 +48,18 @@ pub struct ProcessControlBlockInner {
     pub mutex_list: Vec<Option<Arc<dyn Mutex>>>,
     /// semaphore list
     pub semaphore_list: Vec<Option<Arc<Semaphore>>>,
+    /// semaphore resource counts (max resources when created)
+    pub semaphore_res_counts: Vec<usize>,
     /// condvar list
     pub condvar_list: Vec<Option<Arc<Condvar>>>,
+    /// deadlock detection enabled
+    pub deadlock_detection_enabled: bool,
+    /// resource allocation matrix: thread_id -> resource_id -> count
+    /// for mutex: resource_id is mutex_list index, max count is 1
+    /// for semaphore: resource_id is MAX_MUTEX + semaphore_list index, max count is semaphore res_count
+    pub allocation: Vec<Vec<usize>>,
+    /// resource need matrix: thread_id -> resource_id -> count
+    pub need: Vec<Vec<usize>>,
 }
 
 impl ProcessControlBlockInner {
@@ -118,7 +129,11 @@ impl ProcessControlBlock {
                     task_res_allocator: RecycleAllocator::new(),
                     mutex_list: Vec::new(),
                     semaphore_list: Vec::new(),
+                    semaphore_res_counts: Vec::new(),
                     condvar_list: Vec::new(),
+                    deadlock_detection_enabled: false,
+                    allocation: Vec::new(),
+                    need: Vec::new(),
                 })
             },
         });
@@ -244,7 +259,11 @@ impl ProcessControlBlock {
                     task_res_allocator: RecycleAllocator::new(),
                     mutex_list: Vec::new(),
                     semaphore_list: Vec::new(),
+                    semaphore_res_counts: Vec::new(),
                     condvar_list: Vec::new(),
+                    deadlock_detection_enabled: false,
+                    allocation: Vec::new(),
+                    need: Vec::new(),
                 })
             },
         });
