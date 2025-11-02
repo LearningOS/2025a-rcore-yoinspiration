@@ -133,6 +133,16 @@ impl TaskManager {
         inner.tasks[cur].change_program_brk(size)
     }
 
+    /// Get the current 'Running' task's memory set for mutation
+    pub fn with_current_memory_set<F, R>(&self, f: F) -> R
+    where
+        F: FnOnce(&mut crate::mm::MemorySet) -> R,
+    {
+        let mut inner = self.inner.exclusive_access();
+        let cur = inner.current_task;
+        f(&mut inner.tasks[cur].memory_set)
+    }
+
     /// Switch current `Running` task to the task we have found,
     /// or there is no `Ready` task and we can exit with all applications completed
     fn run_next_task(&self) {
@@ -201,4 +211,12 @@ pub fn current_trap_cx() -> &'static mut TrapContext {
 /// Change the current 'Running' task's program break
 pub fn change_program_brk(size: i32) -> Option<usize> {
     TASK_MANAGER.change_current_program_brk(size)
+}
+
+/// Access current task's memory set
+pub fn with_current_memory_set<F, R>(f: F) -> R
+where
+    F: FnOnce(&mut crate::mm::MemorySet) -> R,
+{
+    TASK_MANAGER.with_current_memory_set(f)
 }
